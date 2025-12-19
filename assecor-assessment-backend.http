@@ -1,0 +1,30 @@
+@AssecorAssessment_HostAddress = http://localhost:5183
+
+GET {{AssecorAssessment_HostAddress}}/persons
+Accept: application/json
+
+###
+
+GET {{AssecorAssessment_HostAddress}}/persons/1
+Accept: application/json
+
+###
+
+GET {{AssecorAssessment_HostAddress}}/persons/color/blau
+Accept: application/json
+
+###
+
+POST {{AssecorAssessment_HostAddress}}/persons
+Content-Type: application/json
+
+{
+  "id": 8,
+  "name": "Max",
+  "lastname": "Mustermann",
+  "zipcode": "12345",
+  "city": "Berlin",
+  "color": "rot"
+}
+
+###
